@@ -40,3 +40,80 @@ body {
   padding: 50px;
   text-align: center;
 }
+.page-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: #3b1d1d;
+  color: #f5d7a1;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.price-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.price-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.price-card h2 {
+  color: #6b2c2c;
+}
+
+.price-card span {
+  display: block;
+  font-size: 26px;
+  color: #c9a14a;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.cta {
+  text-align: center;
+  margin: 30px;
+}
+
+.cta a {
+  background: #c9a14a;
+  color: #3b1d1d;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back {
+  text-align: center;
+  margin: 30px;
+}
+
+.back a {
+  color: #6b2c2c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
