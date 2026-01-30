@@ -5,23 +5,18 @@ body {
   color: #4a2c2a;
 }
 
-/*.hero {
+.hero {
   text-align: center;
   padding: 80px 20px;
   background: linear-gradient(#3b1d1d, #6b2c2c);
   color: #f5d7a1;
-} */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background: #fff2e6;
 }
 
-.logo {
-  width: 140px;        /* adjust as needed */
-  max-width: 60%;
+.logo-img {
+  width: 140px;
   height: auto;
-  margin-bottom: 15px;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 
