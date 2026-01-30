@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #fff8f0;
+  color: #4a2c2a;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(#3b1d1d, #6b2c2c);
+  color: #f5d7a1;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  background: #c9a14a;
+  color: #3b1d1d;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.buttons a:hover {
+  background: #e5c76b;
+}
+
+.about {
+  padding: 50px;
+  text-align: center;
+}
