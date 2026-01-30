@@ -11,6 +11,19 @@ body {
   background: linear-gradient(#3b1d1d, #6b2c2c);
   color: #f5d7a1;
 }
+/*.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff2e6;
+}*/
+
+.logo {
+  width: 140px;        /* adjust as needed */
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
 
 .hero h1 {
   font-size: 42px;
