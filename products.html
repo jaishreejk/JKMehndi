@@ -31,55 +31,117 @@
   <p>Premium quality for dark & long-lasting stain</p>
 </header>
 
+ <div class="filter-buttons">
+  <button onclick="filterProducts('all')" class="active">All</button>
+  <button onclick="filterProducts('supplies')">Supplies</button>
+  <button onclick="filterProducts('learning')">Learning</button>
+  <button onclick="filterProducts('practice')">Practice</button>
+</div>
+ 
+
 <section class="product-grid">
 
-  <!-- PRODUCT 1 -->
-  <div class="product-card">
-    <img src="images/cone1.jpg" alt="Natural Mehndi Cone">
-    <h2>Natural Mehndi Cone</h2>
-    <p>Freshly prepared cone for dark stain and smooth design.</p>
+  <!-- Mehndi Cones -->
+  <div class="product-card supplies">
+    <img src="images/mehndi_cone.jpg">
+    <h2>Natural Mehndi Cones</h2>
+    <p>Fresh cones for dark, long-lasting stain.</p>
     <span class="price">₹50 / cone</span>
-
     <a class="buy-btn"
-       href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20to%20buy%20Natural%20Mehndi%20Cone.%20Please%20share%20details."
-       target="_blank">
-       Enquire on WhatsApp
-    </a>
+      href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20to%20buy%20Mehndi%20Cones."
+      target="_blank">Buy on WhatsApp</a>
   </div>
 
-  <!-- PRODUCT 2 -->
-  <div class="product-card">
-    <img src="images/henna_powder.jpg" alt="Henna Powder">
-    <h2>Premium Henna Powder</h2>
-    <p>100% natural henna powder for rich maroon colour.</p>
+  <!-- Beginner Course -->
+  <div class="product-card learning">
+    <img src="images/beginner_course.jpg">
+    <h2>Beginner Mehndi Course</h2>
+    <p>Step-by-step training for beginners (Online / Offline).</p>
+    <span class="price">₹2,999</span>
+    <a class="buy-btn"
+      href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20details%20of%20Beginner%20Mehndi%20Course."
+      target="_blank">Enquire on WhatsApp</a>
+  </div>
+
+  <!-- Practice Book -->
+  <div class="product-card practice">
+    <img src="images/practice_book.jpg">
+    <h2>Reusable Practice Book</h2>
+    <p>Perfect for improving strokes & patterns.</p>
+    <span class="price">₹499</span>
+    <a class="buy-btn"
+      href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20to%20buy%20Reusable%20Practice%20Book."
+      target="_blank">Buy on WhatsApp</a>
+  </div>
+
+  <!-- Mehndi Powder -->
+  <div class="product-card supplies">
+    <img src="images/mehndi_powder.jpg">
+    <h2>Mehndi Powder</h2>
+    <p>Pure henna powder for rich colour.</p>
     <span class="price">₹299 / 100g</span>
-
     <a class="buy-btn"
-       href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20to%20buy%20Premium%20Henna%20Powder.%20Please%20share%20details."
-       target="_blank">
-       Buy on WhatsApp
-    </a>
+      href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20Mehndi%20Powder."
+      target="_blank">Buy on WhatsApp</a>
   </div>
 
-  <!-- PRODUCT 3 -->
-  <div class="product-card">
-    <img src="images/aftercare_oil.jpg" alt="Mehndi Aftercare Oil">
-    <h2>Mehndi Aftercare Oil</h2>
-    <p>Helps in achieving darker stain and long-lasting colour.</p>
+  <!-- Mehndi Oil -->
+  <div class="product-card supplies">
+    <img src="images/mehndi_oil.jpg">
+    <h2>Mehndi Oil</h2>
+    <p>Helps in darker & longer-lasting stain.</p>
     <span class="price">₹199</span>
-
     <a class="buy-btn"
-       href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20to%20buy%20Mehndi%20Aftercare%20Oil.%20Please%20share%20details."
-       target="_blank">
-       Enquire on WhatsApp
-    </a>
+      href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20Mehndi%20Oil."
+      target="_blank">Buy on WhatsApp</a>
+  </div>
+
+  <!-- Cellophane Sheet -->
+  <div class="product-card supplies">
+    <img src="images/cellophane.jpg">
+    <h2>Cellophane Sheet</h2>
+    <p>For cone rolling & storage.</p>
+    <span class="price">₹149 / pack</span>
+    <a class="buy-btn"
+      href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20Cellophane%20Sheet."
+      target="_blank">Buy on WhatsApp</a>
+  </div>
+
+  <!-- Pins -->
+  <div class="product-card supplies">
+    <img src="images/pins_3_5.jpg">
+    <h2>Pins (3.5 Microns)</h2>
+    <p>Perfect pin size for fine mehndi detailing.</p>
+    <span class="price">₹99 / pack</span>
+    <a class="buy-btn"
+      href="https://wa.me/91XXXXXXXXXX?text=Hi%20JK%20Mehndi%20Artist,%20I%20want%20Pins%203.5%20Microns."
+      target="_blank">Buy on WhatsApp</a>
   </div>
 
 </section>
 
+
 <div class="back">
   <a href="index.html">← Back to Home</a>
 </div>
+<script>
+function filterProducts(category) {
+  let cards = document.querySelectorAll('.product-card');
+  let buttons = document.querySelectorAll('.filter-buttons button');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  event.target.classList.add('active');
+
+  cards.forEach(card => {
+    if (category === 'all' || card.classList.contains(category)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
 
 </body>
 </html>
