@@ -1,0 +1,23 @@
+{
+  "name": "jkmehndi",
+  "version": "1.0.0",
+  "description": "Static project . no login , no backend",
+  "homepage": "https://github.com/jaishreejk/JKMehndi#readme",
+  "bugs": {
+    "url": "https://github.com/jaishreejk/JKMehndi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaishreejk/JKMehndi.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
