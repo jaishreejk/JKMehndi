@@ -243,6 +243,28 @@ body {
 .buy-btn:hover {
   background: #1ebe5b;
 }
+.filter-buttons {
+  text-align: center;
+  margin: 30px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background: #3b1d1d;
+  color: #f5d7a1;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #c9a14a;
+  color: #3b1d1d;
+}
+
 
 
 
