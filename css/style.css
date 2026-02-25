@@ -328,5 +328,68 @@ body {
   background: #f5d7a1;
 }
 
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+/* header {
+  background: #8b0000;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+} */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+} 
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #8b0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+
+/* nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  background: #f8e1e7;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+
+
+
+ */
 
 
