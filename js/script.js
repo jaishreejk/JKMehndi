@@ -50,3 +50,12 @@ document.querySelector(".hero-slider").addEventListener("mouseenter", () => clea
 document.querySelector(".hero-slider").addEventListener("mouseleave", startAutoSlide);
 
 showSlide(index);
+
+// Simple dynamic WhatsApp message example
+
+function bookWithDate() {
+  const date = prompt("Enter your event date (DD-MM-YYYY):");
+  if (date) {
+    window.open(`https://wa.me/91XXXXXXXXXX?text=Hi, I want to book Mehndi for ${date}`);
+  }
+}
