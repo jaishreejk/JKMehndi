@@ -417,6 +417,17 @@ footer {
   text-align: center;
   padding: 60px 20px;
 }
+.price-image{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}
+
+.price-image img{
+  width:100%;
+  max-width:700px;
+  border-radius:10px;
+}
 
 
 
