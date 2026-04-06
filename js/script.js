@@ -4,22 +4,39 @@ const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 const dotsContainer = document.querySelector(".dots");
 
-// how many slides are visible at once; should match flex basis in CSS
-const visibleSlides = 3;
+const getVisibleSlides = () => window.innerWidth <= 768 ? 1 : 3;
+let visibleSlides = getVisibleSlides();
 
 let index = 0;           // current page index (0 = first slide visible)
 let interval;
 
-// Create dots – one dot per page, not per slide
-const pageCount = Math.max(1, slides.length - visibleSlides + 1);
-for (let i = 0; i < pageCount; i++) {
-  const dot = document.createElement("span");
-  dot.addEventListener("click", () => showSlide(i));
-  dotsContainer.appendChild(dot);
+let pageCount = Math.max(1, slides.length - visibleSlides + 1);
+let dots = null;
+
+function createDots() {
+  dotsContainer.innerHTML = "";
+  for (let i = 0; i < pageCount; i++) {
+    const dot = document.createElement("span");
+    dot.addEventListener("click", () => showSlide(i));
+    dotsContainer.appendChild(dot);
+  }
+  dots = document.querySelectorAll(".dots span");
 }
 
-// query dots after they've been generated
-const dots = document.querySelectorAll(".dots span");
+createDots();
+
+function handleResize() {
+  const newVisibleSlides = getVisibleSlides();
+  if (newVisibleSlides !== visibleSlides) {
+    visibleSlides = newVisibleSlides;
+    pageCount = Math.max(1, slides.length - visibleSlides + 1);
+    if (index >= pageCount) index = 0;
+    createDots();
+    showSlide(index);
+  }
+}
+
+window.addEventListener("resize", handleResize);
 
 function updateSlideStyles() {
   // determine center slide index for the current page
