@@ -312,6 +312,11 @@ body {
   opacity: 0.6;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 60vh;
+  }
+}
 
 .slide img {
   width: 100%;
